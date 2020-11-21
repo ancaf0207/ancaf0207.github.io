@@ -1,3 +1,11 @@
+See below the readme from html5up.net | @ajlkn
+
+The original images of the template have been replaced with other free images from https://pixabay.com/.
+
+
+
+
+
 Phantom by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
