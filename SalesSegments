@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Anca Filip-Data analysis projects portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1><br />
+								Sales Segments Tableau Dashboard </h1>
+								<p> <i> Our first tactical dashboard was a hit, which means we have attracted some attention. Now the full executive team wants a more strategic view of the business.
+
+You need to create a dashboard that allows the team to see:<br />
+
+Top-level revenue, profit, average profit ratio and units sold<br />
+YoY performance by segment (segment refers to Corporate, Consumer, Home Office)<br />
+Monthly trend of the current year by segment (segment refers to Corporate, Consumer, Home Office)<br />
+View category performance<br />
+Best performing sub-category within each customer segment<br />
+The difference between this dashboard and the previous, besides the content, is the emphasis on performance. Your executive audience does not have the time to make all the comparisons themselves. They need you to emphasize the main points of interest they will relay to their team leads for further investigation and discuss among themselves regarding strategy.
+ </i>  </p>
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="images/paper.jpg" alt="" />
+									</span>
+									<a href="Anca Filip_Dashboard Design - Final_v0.pdf">
+										<h2> Submission Paper </h2>
+
+									</a>
+                  </article>
+                  <article class="style2">
+									<span class="image">
+										<img src="images/tableau.jpg" alt="" />
+									</span>
+									<a href="https://public.tableau.com/app/profile/anca3789/viz/p3_drft1/Dashboard1#1">
+										<h2> Tableau Dashboard Link </h2>
+
+									</a>
+
+								
+							</section>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							
+							<section>
+								<h2>Come find me</h2>
+								<ul class="icons">
+									
+									<li><a href="https://github.com/ancaf0207" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/anca-filip-a8b0a315/" class="icon brands style2 fa-dribbble"><span class="label">LinkedIn</span></a></li>
+									<li><a href="mailto:ancaf0207@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved for the html template</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Images have been downloaded form pixabay. </li><li>Design: <a href="https://pixabay.com">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
