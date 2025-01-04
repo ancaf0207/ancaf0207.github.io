@@ -25,7 +25,7 @@ body {
   width: 320px; /* Phone screen size */
   height: 480px; /* Adjust as needed */
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(200, 71, 43 , 0.1);
   background-color: #fff;
 }
 
@@ -46,7 +46,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(100, 0, 0, 0.5);
+  background-color: rgba(26, 200, 169 , 0.5);
   color: white;
   border: none;
   border-radius: 50%;
