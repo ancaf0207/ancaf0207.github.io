@@ -22,8 +22,8 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 320px; /* Phone screen size */
-  height: 480px; /* Adjust as needed */
+  width: 300px; /* Phone screen size */
+  height: 350px; /* Adjust as needed */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(200, 71, 43 , 0.1);
   background-color: #fff;
