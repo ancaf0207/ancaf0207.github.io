@@ -1,3 +1,12 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -23,13 +32,4 @@
 
 .arrow.right {
   right: -30px;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
 }
