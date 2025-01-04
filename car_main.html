@@ -51,7 +51,7 @@
 
     .carousel img {
       flex-shrink: 0;
-      width: 80%; /* Fit the container */
+      width: 100%; /* Fit the container */
       height: auto;
       object-fit: cover;
       display: block;
@@ -94,40 +94,52 @@
   <div class="carousel-container">
     <!-- Tops Carousel -->
     <div class="carousel-wrapper">
-      <button class="arrow-box left" data-carousel="tops-carousel">&#8249;</button>
+      <div class="arrow-box left" data-carousel="tops-carousel">
+        <span class="arrow">&#8249;</span>
+      </div>
       <div class="carousel" id="tops-carousel">
         <img src="images/camasa.png" alt="Top 1">
         <img src="images/camasa2.jpg" alt="Top 2">
         <img src="images/camasa3.jpg" alt="Top 3">
       </div>
-      <button class="arrow-box right" data-carousel="tops-carousel">&#8250;</button>
+      <div class="arrow-box right" data-carousel="tops-carousel">
+        <span class="arrow">&#8250;</span>
+      </div>
     </div>
 
     <!-- Bottoms Carousel -->
     <div class="carousel-wrapper">
-      <button class="arrow-box left" data-carousel="bottoms-carousel">&#8249;</button>
+      <div class="arrow-box left" data-carousel="bottoms-carousel">
+        <span class="arrow">&#8249;</span>
+      </div>
       <div class="carousel" id="bottoms-carousel">
         <img src="images/pantaloni.png" alt="Bottom 1">
         <img src="images/pantaloni2.jpg" alt="Bottom 2">
         <img src="images/pantaloni3.jpg" alt="Bottom 3">
       </div>
-      <button class="arrow-box right" data-carousel="bottoms-carousel">&#8250;</button>
+      <div class="arrow-box right" data-carousel="bottoms-carousel">
+        <span class="arrow">&#8250;</span>
+      </div>
     </div>
 
     <!-- Accessories Carousel -->
     <div class="carousel-wrapper">
-      <button class="arrow-box left" data-carousel="accessories-carousel">&#8249;</button>
+      <div class="arrow-box left" data-carousel="accessories-carousel">
+        <span class="arrow">&#8249;</span>
+      </div>
       <div class="carousel" id="accessories-carousel">
         <img src="images/pantofi1.jpg" alt="Accessory 1">
         <img src="images/pantofi2.jpg" alt="Accessory 2">
         <img src="images/pantofi3.jpg" alt="Accessory 3">
       </div>
-      <button class="arrow-box right" data-carousel="accessories-carousel">&#8250;</button>
+      <div class="arrow-box right" data-carousel="accessories-carousel">
+        <span class="arrow">&#8250;</span>
+      </div>
     </div>
   </div>
 
   <script>
-    document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
+      document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
       const carousel = wrapper.querySelector('.carousel');
       const leftArrow = wrapper.querySelector('.arrow-box.left');
       const rightArrow = wrapper.querySelector('.arrow-box.right');
