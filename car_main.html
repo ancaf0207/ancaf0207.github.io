@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carousel Example</title>
   <style>
     /* General body styling */
     body {
       font-family: Arial, sans-serif;
-      background-color: #40E0D0;
+      background-color: #f0f0f0;
       margin: 0;
       padding: 0;
       display: flex;
@@ -29,12 +29,9 @@
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: center;
-      width: 250px; /* Phone screen size */
-      height: 300px; /* Adjust as needed */
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      background-color: #CCCCFF;
+      justify-content: space-between;
+      width: 320px; /* Phone screen size */
+      height: 480px; /* Adjust as needed */
     }
 
     .carousel {
@@ -76,16 +73,16 @@
 
     .arrow-box.left {
       position: absolute;
-      left: -100px;
+      left: -60px;
     }
 
     .arrow-box.right {
       position: absolute;
-      right: -100px;
+      right: -60px;
     }
 
     .arrow {
-      font-size: 55px;
+      font-size: 24px;
       color: black;
     }
   </style>
@@ -139,7 +136,7 @@
   </div>
 
   <script>
-      document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
+    document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
       const carousel = wrapper.querySelector('.carousel');
       const leftArrow = wrapper.querySelector('.arrow-box.left');
       const rightArrow = wrapper.querySelector('.arrow-box.right');
