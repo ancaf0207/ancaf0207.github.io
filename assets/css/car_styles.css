@@ -1,16 +1,45 @@
 body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
 }
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .carousel-wrapper {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 320px; /* Phone screen size */
+  height: 480px; /* Adjust as needed */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+
+.carousel img {
+  width: 100%; /* Fit the container */
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .arrow {
@@ -27,9 +56,9 @@ body {
 }
 
 .arrow.left {
-  left: -30px;
+  left: 10px;
 }
 
 .arrow.right {
-  right: -30px;
+  right: 10px;
 }
