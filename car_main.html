@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
   <title>Carousel Example</title>
   <style>
     /* General body styling */
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
+      background-color: #9FE2BF;
       margin: 0;
       padding: 0;
       display: flex;
@@ -31,11 +31,11 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
-      width: 320px; /* Phone screen size */
-      height: 480px; /* Adjust as needed */
+      width: 250px; /* Phone screen size */
+      height: 300px; /* Adjust as needed */
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      background-color: #fff;
+      background-color: #CCCCFF;
     }
 
     .carousel {
@@ -67,11 +67,11 @@
     }
 
     .arrow.left {
-      left: 10px;
+      left: 40px;
     }
 
     .arrow.right {
-      right: 10px;
+      right: 40px;
     }
   </style>
 </head>
@@ -81,7 +81,7 @@
     <div class="carousel-wrapper">
       <button class="arrow left" data-carousel="tops-carousel">&#8249;</button>
       <div class="carousel" id="tops-carousel">
-        <img src="images/camasa.jpg" alt="Top 1">
+        <img src="images/camasa.png" alt="Top 1">
         <img src="images/camasa2.jpg" alt="Top 2">
         <img src="images/camasa3.jpg" alt="Top 3">
       </div>
@@ -92,7 +92,7 @@
     <div class="carousel-wrapper">
       <button class="arrow left" data-carousel="bottoms-carousel">&#8249;</button>
       <div class="carousel" id="bottoms-carousel">
-        <img src="images/pantaloni.jpg" alt="Bottom 1">
+        <img src="images/pantaloni.png" alt="Bottom 1">
         <img src="images/pantaloni2.jpg" alt="Bottom 2">
         <img src="images/pantaloni3.jpg" alt="Bottom 3">
       </div>
@@ -103,9 +103,9 @@
     <div class="carousel-wrapper">
       <button class="arrow left" data-carousel="accessories-carousel">&#8249;</button>
       <div class="carousel" id="accessories-carousel">
-        <img src="images/pantofi.jpg" alt="Accessory 1">
-        <img src="images/pantofi.jpg" alt="Accessory 2">
-        <img src="images/pantofi.jpg" alt="Accessory 3">
+        <img src="images/pantofi1.jpg" alt="Accessory 1">
+        <img src="images/pantofi2.jpg" alt="Accessory 2">
+        <img src="images/pantofi3.jpg" alt="Accessory 3">
       </div>
       <button class="arrow right" data-carousel="accessories-carousel">&#8250;</button>
     </div>
