@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel Example</title>
+  <style>
+    /* General body styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Carousel container styling */
+    .carousel-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .carousel-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      width: 320px; /* Phone screen size */
+      height: 480px; /* Adjust as needed */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.3s ease-in-out;
+      will-change: transform;
+    }
+
+    .carousel img {
+      flex-shrink: 0;
+      width: 100%; /* Fit the container */
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Arrow styling */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <!-- Tops Carousel -->
+    <div class="carousel-wrapper">
+      <button class="arrow left" data-carousel="tops-carousel">&#8249;</button>
+      <div class="carousel" id="tops-carousel">
+        <img src="images/camasa.jpg" alt="Top 1">
+        <img src="images/camasa2.jpg" alt="Top 2">
+        <img src="images/camasa3.jpg" alt="Top 3">
+      </div>
+      <button class="arrow right" data-carousel="tops-carousel">&#8250;</button>
+    </div>
+
+    <!-- Bottoms Carousel -->
+    <div class="carousel-wrapper">
+      <button class="arrow left" data-carousel="bottoms-carousel">&#8249;</button>
+      <div class="carousel" id="bottoms-carousel">
+        <img src="images/pantaloni.jpg" alt="Bottom 1">
+        <img src="images/pantaloni2.jpg" alt="Bottom 2">
+        <img src="images/pantaloni3.jpg" alt="Bottom 3">
+      </div>
+      <button class="arrow right" data-carousel="bottoms-carousel">&#8250;</button>
+    </div>
+
+    <!-- Accessories Carousel -->
+    <div class="carousel-wrapper">
+      <button class="arrow left" data-carousel="accessories-carousel">&#8249;</button>
+      <div class="carousel" id="accessories-carousel">
+        <img src="images/pantofi.jpg" alt="Accessory 1">
+        <img src="images/pantofi.jpg" alt="Accessory 2">
+        <img src="images/pantofi.jpg" alt="Accessory 3">
+      </div>
+      <button class="arrow right" data-carousel="accessories-carousel">&#8250;</button>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
+      const carousel = wrapper.querySelector('.carousel');
+      const leftArrow = wrapper.querySelector('.arrow.left');
+      const rightArrow = wrapper.querySelector('.arrow.right');
+      const items = carousel.querySelectorAll('img');
+      const itemWidth = wrapper.offsetWidth; // Width of a single visible item
+      let currentIndex = 0;
+
+      const updateCarousel = () => {
+        // Scroll the carousel to the correct position
+        const offset = -(currentIndex * itemWidth);
+        carousel.style.transform = `translateX(${offset}px)`;
+      };
+
+      leftArrow.addEventListener('click', () => {
+        // Move to the previous item (wrap around if necessary)
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateCarousel();
+      });
+
+      rightArrow.addEventListener('click', () => {
+        // Move to the next item (wrap around if necessary)
+        currentIndex = (currentIndex + 1) % items.length;
+        updateCarousel();
+      });
+
+      // Ensure correct width on window resize
+      window.addEventListener('resize', () => {
+        updateCarousel();
+      });
+    });
+  </script>
+</body>
+</html>
