@@ -1,12 +1,28 @@
-const carousels = document.querySelectorAll('.carousel');
+document.querySelectorAll('.carousel-wrapper').forEach(wrapper => {
+  const carousel = wrapper.querySelector('.carousel');
+  const leftArrow = wrapper.querySelector('.arrow.left');
+  const rightArrow = wrapper.querySelector('.arrow.right');
+  const items = carousel.querySelectorAll('img');
+  const itemWidth = wrapper.offsetWidth;
+  let currentIndex = 0;
 
-carousels.forEach(carousel => {
-  carousel.addEventListener('scroll', (e) => {
-    const scrollLeft = e.target.scrollLeft;
-    carousels.forEach(otherCarousel => {
-      if (otherCarousel !== e.target) {
-        otherCarousel.scrollLeft = scrollLeft;
-      }
-    });
+  const updateCarousel = () => {
+    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+  };
+
+  leftArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length; // Circular navigation
+    updateCarousel();
+  });
+
+  rightArrow.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length; // Circular navigation
+    updateCarousel();
+  });
+
+  // Ensure correct width on window resize
+  window.addEventListener('resize', () => {
+    updateCarousel();
   });
 });
+
